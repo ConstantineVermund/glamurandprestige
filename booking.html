@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking - Barbershop Glamour and Prestige</title>
+<meta name="description" content="Premium multi-page website for Barbershop Glamour and Prestige.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/images/logo.png">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<div class="site-shell">
+<div class="top-strip">
+  <div class="container">
+    <span>Premium grooming salon - Haircuts, color, styling and beard care</span>
+    <span>Tue-Sat 09:00-20:00 / Sun 10:00-16:00</span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="container header-grid">
+    <button class="mobile-toggle" data-nav-toggle aria-expanded="false">Menu</button>
+
+    <nav class="nav" aria-label="Primary navigation left">
+      <a href="index.html" class="">Home</a>
+      <a href="services.html" class="">Services</a>
+      <a href="gallery.html" class="">Gallery</a>
+    </nav>
+
+    <a class="logo-link" href="index.html" aria-label="Barbershop Glamour and Prestige home">
+      <img class="logo" src="assets/images/logo.png" alt="Barbershop Glamour and Prestige logo">
+    </a>
+
+    <nav class="nav nav-right" aria-label="Primary navigation right">
+      <a href="about.html" class="">Bio</a>
+      <a href="reviews.html" class="">Reviews</a>
+      <a href="booking.html" class="active">Book</a>
+      <a href="status.html" class="">Status</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="page-title">
+    <div class="container">
+      <div class="breadcrumb">Home / Booking</div>
+      <h1>Book a session</h1>
+      <p class="lead">Select a service, date and time. The form creates a reservation request and a status code. No payment is required.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container form-panel">
+      <aside class="form-side">
+        <img class="logo-mini" src="assets/images/logo.png" alt="Barbershop Glamour and Prestige logo">
+        <h2>Reserve your chair</h2>
+        <p>Booking requests are stored locally in this demo website. A real client version can connect this form to email, CRM, WordPress, Google Sheets or a booking backend.</p>
+        <div class="notice" style="margin-top:20px;background:rgba(255,255,255,0.1);color:rgba(255,255,255,0.8)">
+          <strong style="color:#e6c37a">No payment step.</strong><br>
+          The reservation is a request only. The salon confirms it manually.
+        </div>
+      </aside>
+
+      <form class="form" data-booking-form>
+        <div class="success-box" data-booking-success></div>
+        <div class="form-grid">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" required placeholder="+1 212 555 0188">
+          </div>
+          <div class="field full">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@example.com">
+          </div>
+          <div class="field full">
+            <label for="service">Service</label>
+            <select id="service" name="service" data-service-select required></select>
+          </div>
+          <div class="field">
+            <label for="date">Preferred date</label>
+            <input id="date" name="date" type="date" required>
+          </div>
+          <div class="field">
+            <label for="time">Preferred time</label>
+            <select id="time" name="time" required>
+              <option value="">Choose time</option>
+              <option>09:00</option><option>10:00</option><option>11:00</option>
+              <option>12:00</option><option>13:00</option><option>14:00</option>
+              <option>15:00</option><option>16:00</option><option>17:00</option>
+              <option>18:00</option><option>19:00</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="stylist">Preferred stylist</label>
+            <select id="stylist" name="stylist">
+              <option>Any available expert</option>
+              <option>Lead Stylist</option>
+              <option>Master Barber</option>
+              <option>Color Specialist</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="notes">Notes</label>
+            <textarea id="notes" name="notes" placeholder="Hair length, color history, beard details, preferred result, allergies, timing notes..."></textarea>
+          </div>
+        </div>
+        <div class="notice">
+          <strong>Important:</strong> This is a portfolio-ready demo. It creates a local reservation code in the browser. To make it production-ready, connect the form to a real backend or WordPress plugin.
+        </div>
+        <button class="btn primary" type="submit">Create booking request</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <img class="footer-logo" src="assets/images/logo.png" alt="Barbershop Glamour and Prestige logo">
+      <p>Barbershop Glamour and Prestige is a polished portfolio-ready salon concept with booking requests, service catalog, reviews, gallery and reservation status tools.</p>
+    </div>
+    <div>
+      <h4>Visit</h4>
+      <ul>
+        <li>121 Prestige Avenue</li>
+        <li>New York, NY</li>
+        <li>hello@glamourprestige.example</li>
+        <li>+1 212 555 0188</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Hours</h4>
+      <ul>
+        <li>Mon - Closed</li>
+        <li>Tue-Fri - 09:00-20:00</li>
+        <li>Sat - 09:00-19:00</li>
+        <li>Sun - 10:00-16:00</li>
+      </ul>
+    </div>
+  </div>
+  
+</footer>
+
+<script src="assets/app.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+GITHUB PAGES DEPLOY CHECKLIST
+
+Upload to repository root:
+- index.html
+- services.html
+- gallery.html
+- about.html
+- reviews.html
+- booking.html
+- status.html
+- 404.html
+- .nojekyll
+- assets/
+
+Then:
+Settings -> Pages -> Deploy from a branch -> main -> /root
+
+Test:
+- mobile menu
+- service tabs
+- gallery filters
+- booking form
+- status checker with generated booking code
+
+Important:
+GitHub Pages does not support PHP, WordPress admin panel, MySQL or server-side bookings.
